@@ -19,7 +19,7 @@
 # Complexity => O(nlogn)
 
 def sorted_squared_array_1(a):
-    # Constrains
+    # Constraints
     if len(a) < 1 or len(a) > 1000:
         return -1 # Invalid input
 
@@ -35,7 +35,7 @@ def sorted_squared_array(a):
 
     n = len(a)
 
-    # Constrains
+    # Constraints
     if n < 1 or n > 1000:
         return -1 # Invalid input
 
