@@ -49,8 +49,8 @@ def first_non_repeating_character(s):
             return c
     return '_' 
 
+
 if __name__ == "__main__":
-    print(bf_first_non_repeating_character("aaabbcccdeeef"))
-    print(hm_first_non_repeating_character("aaabbcccdeeef"))
-    print(first_non_repeating_character("aaabcccdeeef"))
+    import tests
+    tests.run_test()
      
