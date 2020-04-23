@@ -51,6 +51,7 @@ def sorted_squared_array(a):
         else:
             a_out[i] = a[rp]**2
             rp -= 1
+            
     return a_out
 
 
