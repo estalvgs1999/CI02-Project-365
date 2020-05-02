@@ -61,6 +61,5 @@ def check_max_one_odd(freq_table):
             found_odd = True
     return True
 
-
-
-    
+if __name__ == "__main__":
+    print(is_palindrome_permutation('tactcoa'))
