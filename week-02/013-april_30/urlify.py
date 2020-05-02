@@ -9,10 +9,10 @@
 #  >> Input: "Mr John Smith"
 #  >> Output: "Mr%20John%20Smith"
 #  
-# Question 1.3 | ctci 6th edition
+#  Question 1.3 | ctci 6th edition
 #
 #  by: @estalvgs1999
-# --------------------------------------
+# ---------------------------------------
 
 # Complexity => O(n)
 def urlify(string):
@@ -22,8 +22,4 @@ def urlify(string):
 if __name__ == "__main__":
     
     s_input = "Mr John Smith"
-    print(urlify(s_input))
-    
-
-
-    
+    print(urlify(s_input))    
