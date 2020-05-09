@@ -16,7 +16,6 @@
 
 import sys
 sys.path.insert(0, "/home/estalvgs1999/Documentos/code skills/CI02-Project-365/data_structures")
-
 import linked_list as LL
 
 # Remove duplicates from an unsorted linked list
