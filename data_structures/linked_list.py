@@ -121,10 +121,10 @@ class Linked_List():
 
 
     # Returns the length of the list
-    def length():
+    def length(self):
         return self.__length
 
-    def head():
+    def head(self):
         return self.__head
 
     def __check_index(self, index):

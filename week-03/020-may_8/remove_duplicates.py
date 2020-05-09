@@ -14,6 +14,11 @@
 #  by: @estalvgs1999
 # ---------------------------------------
 
+import sys
+sys.path.insert(0, "/home/estalvgs1999/Documentos/code skills/CI02-Project-365/data_structures")
+
+import linked_list as LL
+
 # Remove duplicates from an unsorted linked list
 # Complexity => O(n); n = list.length
 def remove_duplicates(_list):
@@ -28,31 +33,31 @@ def remove_duplicates(_list):
             p_node.set_next(c_node.next)
         else:
             item_set.append(c_node.data)
-            print(item_set)
             p_node = c_node
         c_node = c_node.next
 
 
-# What if a temporary buffer is not allowed?
-# Complexity => O(n²) and O(1) in space
-def remove_duplicates(_list):
+def test_list():
 
-    c_node = _list.head()
+    l_list = LL.Linked_List()
 
-    while c_node:
-        runner = c_node
+    # create [1,2,3,4,2,8,2]
+    l_list.add(1)
+    l_list.add(2)
+    l_list.add(3)
+    l_list.add(4)
+    l_list.add(2)
+    l_list.add(8)
+    l_list.add(2)
 
-        while runner.next:
-        
-            if runner.data == c_node.data:
-                runner.next = runner.next.next
-            else:
-                runner = runner.next
-        
-            c_node = c_node.next
+    return l_list
 
 
 if __name__ == "__main__":
     
-    pass
+    # Test 1
+    l_list = test_list()
+    l_list.show()
+    remove_duplicates(l_list)
+    l_list.show()
 
